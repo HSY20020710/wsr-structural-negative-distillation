@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction"
+message: "If you use this code, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: Huang
+    given-names: Shuya
+  - family-names: Yin
+    given-names: Jun
+repository-code: "https://github.com/HSY20020710/wsr-structural-negative-distillation"
+license: MIT
+version: 1.0.0
+date-released: 2026-06-27
+keywords:
+  - ship welding quality
+  - WSR methodology
+  - knowledge extraction
+  - knowledge distillation
+  - structural negatives

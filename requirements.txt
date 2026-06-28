@@ -1,0 +1,9 @@
+torch>=2.3
+transformers>=4.51,<5
+accelerate>=1.2
+sentencepiece>=0.2
+safetensors>=0.4
+PyYAML>=6.0
+
+# Development / tests
+pytest>=8.0
