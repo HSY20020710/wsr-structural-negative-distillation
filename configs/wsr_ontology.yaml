@@ -1,0 +1,94 @@
+defect_labels:
+  - 漏焊
+  - 漏装
+  - 裂纹
+  - 气孔
+  - 夹渣
+  - 变形
+  - 未除锈
+  - 其他
+
+event_labels:
+  - 工艺纪律违规
+  - 焊接管控不到位
+  - 保护不到位
+  - 检测返修问题
+  - 责任管理问题
+  - 设计工艺问题
+  - 设备材料问题
+  - 环境条件问题
+  - 人员能力不足
+  - 其他
+
+entity_types:
+  W_DEFECT:
+    layer: Wuli
+    description: 焊接缺陷或质量结果，如漏焊、漏装、裂纹、气孔、夹渣、变形、焊脚不足、未熔合、渗漏、焊接质量差、缺陷较多。
+  W_LOCATION:
+    layer: Wuli
+    description: 焊缝、坡口、根部、舱室、分段、区域、位置、接头、角焊缝、合拢缝等。
+  W_COMPONENT:
+    layer: Wuli
+    description: 板材、构件、分段、管件、补板、纵骨、舱壁、外板、内底板、套管、管路、支座、栏杆等物理对象。
+  W_PHYSICAL_CONDITION:
+    layer: Wuli
+    description: 湿度、低温、风大、雨水、表面油污、水渍、氧化皮、锈蚀、焊材返潮、焊丝返锈等物理或环境状态。
+  S_PROCESS:
+    layer: Shili
+    description: 焊接、施工、装配、打磨、除锈、清理、加热、预热、报验、互检、转序、补焊、返修等过程行为。
+  S_CAUSE:
+    layer: Shili
+    description: 导致质量问题的具体原因，如未按图施工、未按工艺施工、焊前清理不到位、坡口未处理、焊接速度过快、焊接顺序错误、交底不到位、培训效果不佳。
+  S_REQUIREMENT:
+    layer: Shili
+    description: 图纸要求、工艺要求、焊接工艺要求、标准要求、WPS、设计要求、规格表要求、制度要求。
+  S_INSPECTION:
+    layer: Shili
+    description: 检查、抽查、探伤、RT检测、磁粉探伤、密性试验、真空试验、复检等。
+  S_REPAIR:
+    layer: Shili
+    description: 补焊、返修、重新修补、打磨、整改、修理、开刀调整等处置措施。
+  R_PERSON:
+    layer: Renli
+    description: 施工人员、焊工、检验员、管理人员、新员工、设计人员、操作人员等。
+  R_TEAM:
+    layer: Renli
+    description: 班组、部门、施工队、生产部门、设计部、车间等。
+  R_RESPONSIBILITY:
+    layer: Renli
+    description: 责任心不足、管理不到位、监管缺位、未互检、未检查、未传达要求、未培训、无证上岗、履职不到位等责任或管理因素。
+
+relation_types:
+  - CAUSES
+  - CONTRIBUTES_TO
+  - OCCURS_AT
+  - AFFECTS
+  - VIOLATES
+  - RESPONSIBLE_FOR
+  - NO_RELATION
+
+relation_definitions:
+  CAUSES: 直接技术原因或物理条件导致焊接缺陷或质量结果。
+  CONTRIBUTES_TO: 人员、能力、责任或管理因素间接促成焊接缺陷或质量结果。
+  OCCURS_AT: 缺陷发生在某个焊接位置或区域。
+  AFFECTS: 缺陷影响某个部件、构件或设备对象。
+  VIOLATES: 原因、过程或责任行为违反原文明确出现的图纸、工艺、标准或要求。
+  RESPONSIBLE_FOR: 人员或团队承担某项责任行为或管理失误。
+
+allowed_relations:
+  CAUSES:
+    - [S_CAUSE, W_DEFECT]
+    - [W_PHYSICAL_CONDITION, W_DEFECT]
+  CONTRIBUTES_TO:
+    - [S_CAUSE, W_DEFECT]
+    - [R_RESPONSIBILITY, W_DEFECT]
+  OCCURS_AT:
+    - [W_DEFECT, W_LOCATION]
+  AFFECTS:
+    - [W_DEFECT, W_COMPONENT]
+  VIOLATES:
+    - [S_CAUSE, S_REQUIREMENT]
+    - [R_RESPONSIBILITY, S_REQUIREMENT]
+  RESPONSIBLE_FOR:
+    - [R_PERSON, R_RESPONSIBILITY]
+    - [R_TEAM, R_RESPONSIBILITY]

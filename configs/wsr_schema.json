@@ -1,0 +1,30 @@
+{
+  "entity_types": {
+    "WeldingDefect": "W",
+    "Weld": "W",
+    "Component": "W",
+    "Location": "W",
+    "MaterialState": "W",
+    "EnvironmentCondition": "W",
+    "ProcessAction": "S",
+    "ProcessViolation": "S",
+    "InspectionAction": "S",
+    "RepairAction": "S",
+    "ProcessStandard": "S",
+    "QualityResult": "S",
+    "Worker": "R",
+    "Inspector": "R",
+    "Manager": "R",
+    "Team": "R",
+    "Department": "R",
+    "ManagementFailure": "R"
+  },
+  "relation_types": [
+    "Causes",
+    "Contributes_to",
+    "Occurs_at",
+    "Affects",
+    "Violates",
+    "Responsible_for"
+  ]
+}
