@@ -1,6 +1,6 @@
-# WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction
+# From WSR Constraints to Learnable Structural Negatives: Lightweight Knowledge Distillation for Shipbuilding Welding Quality Extraction
 
-Official code release for the paper **"WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction"**.
+Official code release for the paper "From WSR Constraints to Learnable Structural Negatives: Lightweight Knowledge Distillation for Shipbuilding Welding Quality Extraction".
 
 The repository provides the implementation of the Wuli-Shili-Renli (WSR) consistency gate, teacher-output refinement, structural negative construction, student distillation training, and evaluation scripts used in the paper.
 
