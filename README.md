@@ -1,6 +1,6 @@
-#Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports
+#**Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports**
 
-Official code release for the paper "From WSR Constraints to Learnable Structural Negatives: Lightweight Knowledge Distillation for Shipbuilding Welding Quality Extraction".
+Official code release for the paper "Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports".
 
 The repository provides the implementation of the Wuli-Shili-Renli (WSR) consistency gate, teacher-output refinement, structural negative construction, student distillation training, and evaluation scripts used in the paper.
 
