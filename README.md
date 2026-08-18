@@ -1,4 +1,4 @@
-# From WSR Constraints to Learnable Structural Negatives: Lightweight Knowledge Distillation for Shipbuilding Welding Quality Extraction
+#Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports
 
 Official code release for the paper "From WSR Constraints to Learnable Structural Negatives: Lightweight Knowledge Distillation for Shipbuilding Welding Quality Extraction".
 
