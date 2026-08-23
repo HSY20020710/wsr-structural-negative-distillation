@@ -4,6 +4,16 @@ Welding Knowledge AgentLab is a paper-linked research workbench for the WSR-guid
 
 This public package is for code inspection and workflow demonstration. It does not include private ship welding reports, private annotations, full prediction caches, model checkpoints, training logs, manuscript files, or paper experiment outputs.
 
+## Showcase
+
+The following public-safe figures illustrate the AgentLab workflow. They use synthetic examples and do not disclose private reports, paper result tables, checkpoints, or prediction files.
+
+![AgentLab overview](docs/images/agentlab-overview.svg)
+
+![WSR Gate demo](docs/images/gate-demo.svg)
+
+![Evidence chain demo](docs/images/evidence-chain.svg)
+
 ## What Is Included
 
 - `packages/wka_core/`: agent orchestration, evidence store, demo repository, and paper-code bridge.

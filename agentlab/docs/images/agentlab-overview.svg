@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="AgentLab overview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071521"/><stop offset="1" stop-color="#102b3d"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#39a7ff"/><stop offset="1" stop-color="#37d39b"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.28"/></filter>
+    <style>
+      .title{font:700 40px Arial, sans-serif;fill:#f4fbff}.sub{font:400 18px Arial, sans-serif;fill:#a9c7dc}.label{font:700 20px Arial, sans-serif;fill:#eef8ff}.small{font:400 15px Arial, sans-serif;fill:#b7d2e2}.panel{fill:#0d2233;stroke:#244b64;stroke-width:1.5;filter:url(#shadow)}.chip{fill:#12344a;stroke:#2d6587}.ok{fill:#37d39b}.blue{fill:#39a7ff}.warn{fill:#f0b35a}.muted{fill:#6f8ea1}.line{stroke:#4e86a8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#4e86a8"/></marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <text x="70" y="78" class="title">Welding Knowledge AgentLab</text>
+  <text x="70" y="112" class="sub">Public demo workbench for WSR-guided welding knowledge extraction</text>
+  <rect x="70" y="165" width="1060" height="430" rx="18" class="panel"/>
+  <rect x="105" y="215" width="190" height="105" rx="14" class="chip"/><text x="130" y="255" class="label">Demo Reports</text><text x="130" y="286" class="small">Synthetic examples</text>
+  <rect x="360" y="215" width="190" height="105" rx="14" class="chip"/><text x="392" y="255" class="label">Teacher Candidate</text><text x="392" y="286" class="small">Structured JSON</text>
+  <rect x="615" y="215" width="190" height="105" rx="14" class="chip"/><text x="655" y="255" class="label">WSR Gate</text><text x="655" y="286" class="small">PASS / CONFLICT</text>
+  <rect x="870" y="215" width="190" height="105" rx="14" class="chip"/><text x="902" y="255" class="label">Evidence Store</text><text x="902" y="286" class="small">Local run manifest</text>
+  <path d="M300 268 H350" class="line"/><path d="M555 268 H605" class="line"/><path d="M810 268 H860" class="line"/>
+  <rect x="165" y="400" width="225" height="92" rx="14" fill="#102c3f" stroke="#285875"/><circle cx="202" cy="446" r="12" class="blue"/><text x="225" y="438" class="label">Agent Orchestration</text><text x="225" y="466" class="small">Tool-backed workflow</text>
+  <rect x="485" y="400" width="225" height="92" rx="14" fill="#102c3f" stroke="#285875"/><circle cx="522" cy="446" r="12" class="ok"/><text x="545" y="438" class="label">Paper Code Bridge</text><text x="545" y="466" class="small">Calls public WSR logic</text>
+  <rect x="805" y="400" width="225" height="92" rx="14" fill="#102c3f" stroke="#285875"/><circle cx="842" cy="446" r="12" class="warn"/><text x="865" y="438" class="label">Privacy Boundary</text><text x="865" y="466" class="small">No private data/results</text>
+  <text x="80" y="652" class="small">Public release: synthetic demo inputs, API, agent flow, and evidence logging only.</text>
+</svg>
