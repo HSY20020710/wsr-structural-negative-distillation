@@ -1,12 +1,12 @@
-# WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction
+# Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports
 
-Official code release for the paper **"WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction"**.
+Official code release for the paper **"Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports"**.
 
 The repository provides the implementation of the Wuli-Shili-Renli (WSR) consistency gate, teacher-output refinement, structural negative construction, student distillation training, and evaluation scripts used in the paper.
 
 ## Method Pipeline
 
-1. Parse ship welding quality reports into structured report records.
+1. Parse shipbuilding welding quality reports into structured report records.
 2. Generate offline teacher JSON outputs with a large Qwen teacher model.
 3. Apply WSR-guided entity refinement, endpoint remapping, and consistency gating.
 4. Route Gate-passed outputs as positive supervision and Gate-rejected/counterfactual outputs as structural negatives.
