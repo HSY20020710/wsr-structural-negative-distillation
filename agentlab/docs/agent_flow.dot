@@ -1,0 +1,6 @@
+digraph G {graph [rankdir=LR,bgcolor="transparent",pad=0.25,nodesep=0.25,ranksep=0.4];node [shape=box,style="rounded,filled",fontname="Noto Sans CJK SC",fontsize=10,color="#3275aa",fontcolor="#eef7ff",fillcolor="#0b2740"];edge [color="#5aaee0",fontname="Noto Sans CJK SC",fontsize=9,fontcolor="#416f8e"];
+Q [label="ResearchAgent\n解析研究问题"];X [label="ExperimentAgent\n实验规划与版本快照"];T [label="TeacherAgent\nTeacher 候选/冻结缓存"];G [label="GateAuditAgent\n调用 WSR Gate Tools",fillcolor="#3a2b12",color="#ac772b"];N [label="NegativeBuilderAgent\nGate-rejected + minimal perturbation"];S [label="StudentAgent\n训练/预测 Runner"];E [label="EvaluationAgent\nF1 · CVR · bootstrap · efficiency"];
+W [label="Wuli / Shili / Renli\n确定性规则工具",shape=ellipse,fillcolor="#142f45",color="#d19b45"];
+H [label="Human Review\nHandoff",shape=ellipse,fillcolor="#30233e",color="#8965bf"];
+Q->X->T->G->N->S->E; G->W [dir=both,label="tool call"]; G->H [style=dashed,label="UNKNOWN / policy"]; E->X [style=dashed,label="replay / repair"];
+}

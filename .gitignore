@@ -1,0 +1,66 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Local data and private corpora
+data/raw/
+data/processed/
+data/student/
+data/student_expanded/
+data/gold/
+*.xlsx
+*.xls
+
+# Model weights and checkpoints
+models/
+outputs/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+training_args.bin
+
+# Experiment byproducts
+reports/
+work/
+logs/
+*.log
+*.jsonl.tmp
+
+# Documents and local drafts
+*.docx
+*.pdf
+~$*
+*.tmp
+
+# Node / office helper artifacts
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# AgentLab local/private artifacts
+agentlab/data/private/*
+!agentlab/data/private/.gitkeep
+agentlab/runs/*
+!agentlab/runs/.gitkeep
+agentlab/apps/web/node_modules/
+agentlab/apps/web/dist/

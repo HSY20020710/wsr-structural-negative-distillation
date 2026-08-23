@@ -1,0 +1,20 @@
+agents:
+  - id: research_agent
+    role: 研究问题解析与任务意图结构化
+  - id: experiment_agent
+    role: 实验模板选择、参数检查、执行计划
+  - id: teacher_agent
+    role: 调用离线 Teacher 生成或读取冻结候选
+  - id: gate_audit_agent
+    role: 调用确定性 WSR Gate/Rule Tools，记录路由与 provenance
+  - id: negative_builder_agent
+    role: 从确定冲突与最小扰动生成结构负样本
+  - id: student_agent
+    role: 调用学生训练/推理脚本
+  - id: evaluation_agent
+    role: 评估、显著性、效率、artifact hash 与可复现报告
+
+important_boundary:
+  wsr_validators_are_tools: true
+  human_review_is_handoff: true
+  no_llm_vote_for_engineering_truth: true

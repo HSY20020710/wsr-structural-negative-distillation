@@ -1,0 +1,16 @@
+platform:
+  name: Welding Knowledge AgentLab
+  locale: zh-CN
+  mode: public-demo
+  evidence_strict: true
+  private_data_in_git: false
+
+paper:
+  data_policy: private manually annotated and reviewed evaluation data is not included
+  teacher_model: configured externally
+  student_model: configured externally
+  paper_results: not included in the public repository
+
+runner:
+  run_dir: runs
+  paper_code_dir: ..

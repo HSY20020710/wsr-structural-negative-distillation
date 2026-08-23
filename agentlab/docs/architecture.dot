@@ -1,0 +1,13 @@
+digraph AgentLabArchitecture {
+  rankdir=LR;
+  node [shape=box,style="rounded,filled",fillcolor="#10243a",fontcolor="white",color="#4f83b5"];
+  API [label="FastAPI\n/demo cases · gate check · experiment run"];
+  AGENT [label="Agent Orchestrator\nresearch request · tool events"];
+  BRIDGE [label="Paper Bridge\npublic WSR Gate code"];
+  EVIDENCE [label="Evidence Store\nlocal ignored run artifacts"];
+  DEMO [label="Synthetic Demo Data\npublic format examples"];
+  API -> AGENT;
+  AGENT -> BRIDGE;
+  AGENT -> EVIDENCE;
+  DEMO -> API;
+}

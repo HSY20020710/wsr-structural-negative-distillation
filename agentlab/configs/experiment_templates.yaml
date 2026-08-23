@@ -1,0 +1,18 @@
+templates:
+  paper_main:
+    description: 复现主结果：Standard KD / Contrastive KD / Ours，区分 Student-only 与 Student+Gate
+    seed: 42
+    epochs: 8
+    learning_rate: 1.0e-5
+    batch_size: 2
+    gradient_accumulation_steps: 8
+    contrastive_temperature: 0.07
+    structure_margin: 0.5
+    contrastive_weight: 0.1
+    structure_weight: 0.2
+  gate_impact:
+    description: 复现 Gate 前后过滤行为分析
+  ablation:
+    description: Student-only 组件消融
+  efficiency:
+    description: Teacher 与 Student 的 GPU memory / latency 采集

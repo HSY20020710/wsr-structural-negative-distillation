@@ -1,0 +1,21 @@
+{
+  "public_data": [
+    {
+      "path": "data/demo/input/example_reports.txt",
+      "description": "Anonymized synthetic input examples for format inspection."
+    },
+    {
+      "path": "data/demo/expected/example_teacher_output.jsonl",
+      "description": "Synthetic teacher-output format example."
+    },
+    {
+      "path": "data/demo/expected/example_student_prediction.jsonl",
+      "description": "Synthetic student-prediction format example."
+    },
+    {
+      "path": "data/demo/expected/example_gold.jsonl",
+      "description": "Synthetic gold-format example."
+    }
+  ],
+  "private_data_policy": "Private reports, annotations, prediction caches, model outputs, and paper experiment results are not distributed in this public repository."
+}

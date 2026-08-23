@@ -1,0 +1,21 @@
+{
+  "release": "public-agentlab-addon",
+  "included": [
+    "packages/wka_core",
+    "apps/api",
+    "apps/web",
+    "configs",
+    "scripts",
+    "tests",
+    "docs",
+    "data/demo"
+  ],
+  "excluded": [
+    "private reports and annotations",
+    "full prediction caches",
+    "model checkpoints and weights",
+    "training logs and run outputs",
+    "paper manuscript files",
+    "exact paper result tables"
+  ]
+}

@@ -1,6 +1,6 @@
-#**Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports**
+# WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction
 
-Official code release for the paper "Engineering-constraint-guided structural boundary learning for knowledge extraction from shipbuilding welding quality reports".
+Official code release for the paper **"WSR-Guided Structural Negative Distillation: Learning Domain Consistency from Ontology Violations for Lightweight Knowledge Extraction"**.
 
 The repository provides the implementation of the Wuli-Shili-Renli (WSR) consistency gate, teacher-output refinement, structural negative construction, student distillation training, and evaluation scripts used in the paper.
 
@@ -22,6 +22,7 @@ scripts/      Command-line entry points for the paper pipeline
 examples/     Anonymized synthetic examples for format and smoke testing
 docs/         Data policy, reproduction guide, and paper-result summary
 tests/        Unit tests for parsing, training data, teacher stages, and metrics
+agentlab/     Optional public AgentLab demo workbench for API, agent flow, and evidence-chain inspection
 ```
 
 ## Installation
@@ -103,6 +104,10 @@ The public repository is intended to provide:
 ## Data and Model Availability
 
 See `docs/data.md` for the data-release policy. Model weights and training checkpoints are not committed to GitHub. Users should download base models from their original providers and train/evaluate with their own available data or the private dataset under authorized access.
+
+## AgentLab Add-on
+
+`agentlab/` contains an optional public research workbench that wraps the paper code with a FastAPI demo, lightweight agent orchestration, evidence logging, and a minimal web starter. It uses only anonymized synthetic examples; private data, checkpoints, run outputs, and exact paper result files are not included.
 
 ## Citation
 
